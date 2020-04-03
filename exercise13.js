@@ -13,16 +13,13 @@ function targetTerdekat(arr) {
         }
         temp++;      
     }
-    xFurthest = x[x.length-1]
-
-    for (i = 0; i < x.length; i++){
-        
-        if (o < x[i]){
-            return x[i] - o;
-        }else if (o > xFurthest){
-            return o - xFurthest;
-        }
+     
+    if (o < x[0]){
+        return x[0] - o;
+    }else if (o > x[x.length-1]){
+        return o - xFurthest;
     }
+    
     return 0;
   }
   
