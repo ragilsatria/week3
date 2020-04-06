@@ -21,7 +21,7 @@ function targetTerdekat(arr) {
             return x[i] - o;
         }else if (o > xFurthest){
             return o - xFurthest;
-        }
+        } 
     }
     return 0;
   }
